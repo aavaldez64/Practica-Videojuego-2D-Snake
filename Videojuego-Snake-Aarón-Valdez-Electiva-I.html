@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>Videjuego Snake</title>
+  <style>
+    body {
+      background: #444;
+      text-align: center;
+      margin: 64px 0 0 0;
+    }
+    canvas {
+      border: solid 8px white;
+      background: rgb(80, 80, 200);
+      position: relative;
+      margin-top: 10px
+      ;
+    }
+
+
+    .Contenedor-Puntaje {
+      color: white;
+      font-size: 40px;
+      position: absolute;
+      top: 10px;
+      left: 620px;
+    }
+    
+    #Iniciar {
+      font-size: 30px;
+      color: white;
+      background: #209228;
+      border: solid 2px #104914;
+      width: 150px;
+      position: absolute;
+      top:600px;
+      left: 600px;
+    }
+
+    #Iniciar:hover {
+      background: #1b7a21;
+      border: solid 2px #0a300d;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="Board" width="500" height="500"></canvas>
+
+<div class="Contenedor-Puntaje">Score: <span id="Puntaje">0</span></div>
+<button type="button" id="Iniciar">Start</button>
+<script src="game.js"></script>
+
+</body>
+</html>
